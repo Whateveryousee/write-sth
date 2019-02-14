@@ -1,4 +1,4 @@
-# Something Interesting
+# 一些有趣的东西
 
 > * 1. 一些有趣或可能用上的WEB
 
