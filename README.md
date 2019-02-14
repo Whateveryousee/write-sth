@@ -102,3 +102,9 @@
 ```
 <img src="https://github.com/Whateveryousee/write-sth/blob/master/tujianmai.jpg" width="150" height="150" alt="图片加载失败时，显示这段字"/>
 ```
+
+![](https://github.com/Whateveryousee/write-sth/blob/master/tujianmai.jpg)
+
+```
+![](https://github.com/Whateveryousee/write-sth/blob/master/tujianmai.jpg)
+```
