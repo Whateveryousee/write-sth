@@ -97,8 +97,8 @@
 [点击前往谷歌搜索的链接](https://www.google.com.hk/)
 ```
 
-<img src="https://github.com/HeTingwei/ReadmeLearn/blob/master/avatar1.jpg" width="150" height="150" alt="图片加载失败时，显示这段字"/>
+<img src="https://github.com/Whateveryousee/write-sth/blob/master/tujianmai.jpg" width="150" height="150" alt="图片加载失败时，显示这段字"/>
 
 ```
-<img src="https://github.com/HeTingwei/ReadmeLearn/blob/master/avatar1.jpg" width="150" height="150" alt="图片加载失败时，显示这段字"/>
+<img src="https://github.com/Whateveryousee/write-sth/blob/master/tujianmai.jpg" width="150" height="150" alt="图片加载失败时，显示这段字"/>
 ```
