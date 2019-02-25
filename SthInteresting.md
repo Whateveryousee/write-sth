@@ -8,6 +8,8 @@
 
 > >[压缩图片](https://tinypng.com/)
 
+> >[waifu2x](http://waifu2x.udp.jp/)
+
 > >[有道翻译](http://fanyi.youdao.com/)捞得一(｀・ω・´)
 
 > * 2. 想到再写
