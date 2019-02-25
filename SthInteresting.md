@@ -10,6 +10,12 @@
 
 > >[waifu2x](http://waifu2x.udp.jp/)
 
+> >[JQuery查询](http://jquery.cuishifeng.cn/)
+
+> >[lo](https://www.lodashjs.com/)
+
+> >[swiper](https://www.swiper.com.cn/demo/index.html)
+
 > >[有道翻译](http://fanyi.youdao.com/)捞得一(｀・ω・´)
 
 > * 2. 想到再写
