@@ -52,4 +52,4 @@
 </style>
 ```
 
-<img src="box_sizing">
+<img src="box_sizing.png">
