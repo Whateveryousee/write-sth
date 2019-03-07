@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Author" content="Jiacheng">
+    <title>Document</title>
+    <style>
+        .area{
+            background-color: #eee;
+        }
+        xmp{
+            background-color: #000;
+
+            font-size: 20px;
+            font-family: Microsoft YaHei;
+            color: #fff;
+        }
+    </style>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div class="area">
+        <div id="app">
+            <h1>{{message}}</h1>
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'hello vue!'
+                }
+            });
+        </script>
+    </div>
+    <div class="area">
+        <div id="app-2">
+            <p v-bind:title="message">鼠标移入此处查看动态信息</p>
+        </div>
+        <script>
+            var app2 = new Vue({
+                el: '#app-2',
+                data: {
+                    message: '响应时间为' + new Date().toLocaleTimeString()
+                }
+            });
+        </script>
+    </div>
+    <div class="area">
+        <div id="app-3">
+            <p v-if="seen">现在你能看见我？</p>
+            <button type="button" v-on:click="viewChange">看看变化</button>
+        </div>
+        <script>
+            var app3 = new Vue({
+                el: '#app-3',
+                data: {
+                    seen: true
+                },
+                methods: {
+                    viewChange: function(){
+                        if (this.seen) {
+                            this.seen = false;
+                        } else {
+                            this.seen = true;
+                        }
+                    }
+                }
+            });
+        </script>
+    </div>
+    <div class="area">
+        <div id="app-4">
+            <p>{{message}}</p>
+            <button type="button" v-on:click="reverseText">翻转消息</button>
+        </div>
+        <script>
+            var app4 = new Vue({
+                el: '#app-4',
+                data: {
+                    message: 'Hello vue.js!'
+                },
+                methods: {
+                    reverseText: function(){
+                        this.message = this.message.split('').reverse().join('')
+                    }
+                }
+            });
+        </script>
+    </div>
+    <div class="area">
+        <div id="app-5">
+            <p>{{message}}</p>
+            <input type="text" v-model="message">
+        </div>
+        <script>
+            var app5 = new Vue({
+                el: '#app-5',
+                data: {
+                    message: 'Hello vue!'
+                }
+            });
+        </script>
+<!-- xmp app-5 -->
+<xmp>
+<div id="app-5">
+    <p>{{message}}</p>
+    <input type="text" v-model="message">
+</div>
+<script>
+    var app5 = new Vue({
+        el: '#app-5',
+        data: {
+            message: 'Hello vue!'
+        }
+    });
+</script>
+    </xmp>
+<!-- /xmp app-5 -->
+    </div>
+    <div class="area">
+        <div id="app-7">
+            <ol>
+                <!-- 
+                    现在我们为每个 todo-item 提供 todo 对象 todo 对象是变量，即其内容可以是动态的。我们也需要为每个组件提供一个“key”，稍后再作详细解释。
+                -->
+                <todo-item
+                v-for="item in groceryList"
+                v-bind:todo="item"
+                v-bind:key="item.id"
+                ></todo-item>
+            </ol>
+        </div>
+        <script>
+            Vue.component('todo-item', {
+                // todo-item 组件现在接受一个
+                // 'prop',类似于一个自定义特性
+                // 这个prop 名为 todo
+                props: ['todo'],
+                template: '<li>{{todo.text}}</li>'
+            })
+
+            var app7 = new Vue({
+                el: '#app-7',
+                data: {
+                    groceryList: [
+                        {id: 0, text:'蔬菜'},
+                        {id: 1, text:'奶酪'},
+                        {id: 2, text: '随便什么人能吃的东西'}
+                    ]
+                }
+            });
+        </script>
+
+<!-- xmp app-7 -->
+<xmp>
+<div id="app-7">
+    <ol>
+        <!-- 
+            现在我们为每个 todo-item 提供 todo 对象 todo 对象是变量，即其内容可以是动态的。我们也需要为每个组件提供一个“key”，稍后再作详细解释。
+            -->
+        <todo-item
+            v-for="item in groceryList"
+            v-bind:todo="item"
+            v-bind:key="item.id"
+        ></todo-item>
+    </ol>
+</div>
+<script>
+    Vue.component('todo-item', {
+        // todo-item 组件现在接受一个
+        // 'prop',类似于一个自定义特性
+        // 这个prop 名为 todo
+        props: ['todo'],
+        template: '<li>{{todo.text}}</li>'
+    })
+
+    var app7 = new Vue({
+        el: '#app-7',
+        data: {
+            groceryList: [
+                {id: 0, text:'蔬菜'},
+                {id: 1, text:'奶酪'},
+                {id: 2, text: '随便什么人能吃的东西'}
+            ]
+        }
+    });
+</script>
+</xmp>
+<!-- /xmp app-7 -->
+    </div>
+
+</body>
+</html>
