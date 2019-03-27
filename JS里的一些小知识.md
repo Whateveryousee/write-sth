@@ -69,3 +69,9 @@ demo2<br>
 </html>
 ```
 
+## 打印页面（不推荐）
+
+```
+<input type = "button" value = "Print" onclick = "window.print()" />
+```
+
