@@ -75,3 +75,23 @@ demo2<br>
 <input type = "button" value = "Print" onclick = "window.print()" />
 ```
 
+## 获取北京时间
+
+```
+<SCRIPT LANGUAGE = "JavaScript">
+var xmlhttp = new ActiveXObject("MSXML2.XMLHTTP.3.0");
+xmlhttp.open("GET", "http://bjtime.cn", false);
+xmlhttp.setRequestHeader("If-Modified-Since", "bjtime");
+xmlhttp.send();
+var dateStr = xmlhttp.getResponseHeader("Date");
+var date = new Date(dateStr);
+var year = date.getFullYear();
+var month = date.getMonth() + 1;
+var date1 = date.getDate();
+var hour = date.getHours();
+var minutes = date.getMinutes();
+var second = date.getSeconds();
+alert(date + "  |  " + year + "年" + month + "月" + date1 + "日" + hour + "时" + minutes + "分" + second + "秒");
+</SCRIPT>
+```
+
