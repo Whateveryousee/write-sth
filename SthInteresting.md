@@ -16,7 +16,9 @@
 
 > >[swiper](https://www.swiper.com.cn/demo/index.html)
 
-> >[有道翻译](http://fanyi.youdao.com/)捞得一(｀・ω・´)
+> >[有道翻译](http://fanyi.youdao.com/)
+
+> >[音乐聚合搜索引擎](http://www.gequdaquan.net/gqss/)
 
 > * 2. 想到再写
 > > 
